@@ -39,7 +39,14 @@
             width: 50vh;
             height: 60vh; 
           }
+          .mes{
 
+    resize:none;
+
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+          }
           .navbar-custom .navbar-nav .nav-link{
             color:black; /* Black text */
           }
@@ -172,10 +179,10 @@
             </div>
 <!--input Message-->
             <div class="form-group py-md-3">
-              <textarea class="form-control" id="message" name="message" placeholder="Message*" rows="7" style="border-radius:20px;" required></textarea>
+              <textarea class="form-control mes" id="message" name="message" placeholder="Message*" rows="7" style="border-radius:20px;" required></textarea>
             </div>
 <!--Input button--->
-         <button type="submit" class="form-control btn btn-outline-secondary rounded-pill">Convey</button>
+         <button type="submit" class="form-control btn btn-outline-secondary rounded-pill" style="resize:none;">Convey</button>
           </form>
           <div class="container mt-5">
             <a href="" class="text-decoration-none text-dark" style="font-size:18px; margin-left:50px;">Connect with us</a>
