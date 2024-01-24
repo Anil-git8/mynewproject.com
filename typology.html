@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Bootstrap files and icons -->  
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bahnschrift">
+<!--Title-->
+    <title>Typology</title>
+    <style>
+        body {
+            font-family: 'Bahnschrift', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-size:small;
+        }
+        .navbar{
+          position:absolute;
+          z-index:1001;
+
+        }
+          .logo{
+            top:10px;
+            position:absolute;
+          }
+          
+          .left-item img {
+            object-fit: fill;
+            width: 40vh;
+            height: 40vh;
+            margin-left:20%;
+            margin-top:30%;
+          }
+          
+          .navbar-custom .navbar-nav .nav-link{
+            color:black; /* Black text */
+          }
+          .navbar-custom .navbar-nav .nav-link.active,
+          .navbar-custom .navbar-nav .nav-link:focus {
+            color: black;
+            font-weight:bold;/* Slightly darker color when clicked or focused */
+          }
+          .carol{
+            top: 56vh;
+            margin-left:20%;
+          }
+          .mx-1{
+            font-size:14px !important;
+          
+          }
+          
+    </style>
+</head>
+<body>
+  <!--Logo-->
+<div class="container mt-5 mx-5 row" style="font-size:20px;"><script src="https://cdn.lordicon.com/lordicon.js"></script>
+  <lord-icon
+      src="https://cdn.lordicon.com/cnpvyndp.json"
+      trigger="morph"
+      state="morph-home-2"
+      style="width:25px;height:25px">
+  </lord-icon><a class="col-6 text-decoration-none text-dark" href="home.html">Studio Design Definations</a></div>
+
+<div class="d-flex justify-content-end">
+  <a class="navbar-brand logo" href="home.html">
+<!--Logo Image -->
+    <img src="images/Logo4.png" id="logo" class="mx-3 py-3" alt="Logo" height="120">
+  </a>
+</div>
+  
+    <!--Nav-Menu-->
+    <nav class="navbar navbar-expand-lg navbar-custom navbar-light mt-3">
+      <div class="container-fluid mx-5">
+        <button class="navbar-toggler border-secondary" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="us.html">Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="buleprint.html">DD buleprint</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" onclick="demo()" href="#">Works</a>
+            </li>
+         <div id="down" style="display:none;">
+                 <li class="nav-item">
+                     <a class="nav-link fw-bold" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;typology</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="overview.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;overview</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="f&f graph.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f&f graph</a>
+                 </li>
+                </div>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+<!--Archi menu-->
+<div class="container-fluid" >
+  <div class="row mt-5" style="margin-left:16%;">
+    <!-- First Main Heading -->
+    <div class="col-9">
+      <h5 class="text-decoration-none col text-dark fw-bold">Architecture</h5>
+      <!-- Subheadings under First Main Heading -->
+      <div class="row">
+        <div class="col-2 mt-2">
+            <div><a class="text-decoration-none text-dark h6 fw-bold" href="">Residential</a></div>
+            <a class="text-decoration-none text-dark mx-1" href="">The Elite</a>
+            <br><a class="text-decoration-none col text-dark mx-1" href="">Parallel&nbsp;Towers</a>
+          <!-- Add your content here -->
+        </div>
+        <div class="col-2 mt-2" >
+            <div><a class="text-decoration-none text-dark h6 fw-bold" href="">Institutional</a></div>
+            <a class="text-decoration-none text-dark mx-1" href="">The Fashion School</a>
+            <br><a class="text-decoration-none text-dark mx-1" href="">Pedda Badi</a>
+            <br><a class="text-decoration-none text-dark mx-1" href="">Feature&nbsp;wall&nbsp;&&nbsp;stage</a>
+          <!-- Add your content here -->
+        </div>
+        <div class="col-2">
+            <div><a class="text-decoration-none text-dark h6 fw-bold" href="">Commercial</a></div>
+            <a class="text-decoration-none text-dark mx-1" href="">Studio DD Office</a>
+          <!-- Add your content here -->
+        </div>
+        <div class="col-2"style="margin-left:-40px;">
+          <div><a class="text-decoration-none text-dark h6 fw-bold" href="">Public Building</a></div>
+          <a class="text-decoration-none text-dark mx-1" href="">Elypsium&nbsp;Science&nbsp;Museum</a>
+          <br><a class="text-decoration-none text-dark mx-1" href="">The Co-hub Center</a>
+        <!-- Add your content here -->
+      </div>
+        <div class="col-1"style="margin-left:20px; margin-right:60px;">
+            <div><a class="text-decoration-none text-dark h6 fw-bold" href="">&nbsp;&nbsp;&nbsp;&nbsp;Redevelopment</a></div>
+            <a class="text-decoration-none text-dark mx-1" href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mehbub&nbsp;Mansion</a>
+            <br><a class="text-decoration-none text-dark mx-1" href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tipu&nbsp;Khan&nbsp;Sarai</a>
+          <!-- Add your content here -->
+        </div>
+        <div class="col-2"style="margin-left:40px;">
+            <div><a class="text-decoration-none text-dark h6 fw-bold" href="">Memorials</a></div>
+            <a class="text-decoration-none text-dark mx-1" href="">Jai Hind Memorial</a>
+          <!-- Add your content here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Main Heading using flex property -->
+    <div class="col-3 d-flex flex-column">
+      <h5 class="fw-bold">Interior</h5>
+      <!-- Subheadings under Second Main Heading -->
+      <div class="d-flex flex-wrap">
+        <div class="col-3 ">
+          <div><a class="text-decoration-none text-dark fw-bold h6" href="">Residential</a></div>
+          <a class="text-decoration-none text-dark mx-1" href="">Villa</a>
+         <br> <a class="text-decoration-none text-dark mx-1" href="">Flat 01</a>
+          <br><a class="text-decoration-none text-dark mx-1" href="">Flat 02</a>
+          <br><a class="text-decoration-none text-dark mx-1" href="">Flat 03</a>
+        </div>
+        <div class="col-5 mx-3">
+          <div><a class="text-decoration-none h6 text-dark fw-bold ha" href="">Products</a></div>
+          <a class="text-decoration-none text-dark mx-1" href="">Straight & Narrow</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="conatiner row">
+<div id="demo" class="carousel left slide carousel-fade col-3" data-bs-ride="carousel" data-bs-interval="2000">
+  <div class="carousel-inner">
+    <div class="carousel-item left-item active">
+      <img src="images/img1.jpg" class="w-30 h-30" alt="">
+    </div>
+
+
+<!--Sliding images-->
+    <div class="carousel-item left-item">
+      <img src="images/img2.jpg" alt="" class="w-30 h-30">
+    </div>
+
+    <div class="carousel-item left-item">
+      <img src="images/img3.jpg" alt="" class="w-30 h-30">
+    </div>
+
+    <div class="carousel-item left-item">
+      <img src="images/img4.jpg" alt="" class="w-30 h-30">
+    </div>
+
+
+    <div class="carousel-item left-item">
+      <img src="images/img5.jpg" alt="" class="w-30 h-30"> 
+    </div>
+  </div>
+  <button id="btn" class="carousel-control-prev carol col-2" data-bs-target="#demo" data-bs-slide="prev">
+    <span class=""><img src="images/Arros1.png" width="20" height="20" alt="btn"></span>
+  </button>
+  <button id="btn" class="carousel-control-next carol col-2" data-bs-target="#demo" data-bs-slide="next">
+    <span class=""><img src="images/Arros1.png"  width="20" height="20" alt="" style="transform: rotate(180deg);"></span>
+  </button>
+
+  </div>
+
+</div>
+
+  <!---JavaScript code-->
+      <script>
+        function demo() {
+          // Assuming 'down' is the ID of the element you want to toggle
+          var down = document.getElementById('down');
+        
+          if (down.style.display === 'none') {
+            down.style.display = 'block';
+          } else {
+            down.style.display = 'none';
+          }
+        }
+      </script>
+</body>
+</html>
