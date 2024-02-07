@@ -36,11 +36,19 @@
           width: 100%;
           color:black;
           text-align:justify;
-          }
+          opacity: 0;
+          transform: translateX(-100px);
+          transition: ease-in-out, transform 0.5s ease-in-out;
+        }
+        .carousel-item.active .carousel-caption {
+            opacity: 1;
+            transform: translateX(0);
+        }
           .navbar{
             position: absolute;
             width: 100%; 
             z-index: 1002; 
+            
         }
           .logo{
             position: absolute;
@@ -48,7 +56,7 @@
             
           }
           .navbar-custom .navbar-nav .nav-link{
-            color:black; /* Black text */
+            color:black;
           }
           .navbar-custom .navbar-nav .nav-link.active,
           .navbar-custom .navbar-nav .nav-link:focus {
@@ -59,12 +67,6 @@
             position:absolute;
             top:80%;
             right:75%;
-          }
-          .foot{
-            position:absolute;
-            z-index:100;
-            bottom:-9px;
-            left:10%;
           }
           .d-md-block{
             user-select: none;
@@ -170,7 +172,7 @@
 
           <div class="carousel-item">
             <img src="images/img3.jpg" alt="" class="w-100 h-100 d-block d-md-block">
-            <div class="carousel-caption row" style="top:15%; left:69%">
+            <div class="carousel-caption row" style="top:15%; left:72%">
               <div>
               <p class="col-3"><strong class="h5 d-flex justify-content-end">Pedda Badi</strong>The Concept of Secondary School With Earth Materials for 
                 Sustainability, Sufficient Light, and Spaces for Interactive 
