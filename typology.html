@@ -29,11 +29,6 @@
             top:10px;
             position:absolute;
           }
-          .carousel-item img{
-            width:49%; 
-            height:38vh;
-            margin-left:50%;
-          }
           .navbar-custom .navbar-nav .nav-link{
             color:black; /* Black text */
           }
@@ -42,16 +37,17 @@
             color: black;
             font-weight:bold;/* Slightly darker color when clicked or focused */
           }
-          .carol{
-            position:absolute;
-            top:85%;
-            margin-left:60vh;
-            right:100vh;
+           .hover-content{
+            position: absolute;
+            display: none;
+            top:50vh;
+            width:30vh;
+            height:4vh;
+        }
 
-          }
-          .carousel-caption{
-            text-align:start;
-          }
+        .hov-img:hover .hover-content {
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -110,53 +106,93 @@
     </nav>
 
 <!--Archi menu-->
-<div class="container-fluid" >
-  <div class="row mt-5" style="margin-left:16%;">
+<div class="container-fluid d-flex" >
+  <div class="row mt-5" style="margin-left:14%;">
     <!-- First Main Heading -->
-    <div class="col-9">
-      <h5 class="col text-dark fw-bold">Architecture</h5>
+    <div class="col">
+      <h5 class="text-dark fw-bold">Architecture</h5>
       <!-- Subheadings under First Main Heading -->
       <div class="row">
-        <div class="col-2 mt-2">
+        <div class="col-1 mt-2" style="margin-right:6vh">
             <div><a class="text-decoration-none text-dark h6 fw-bold" href="">Residential</a></div>
             <!--<a class="text-decoration-none text-dark mx-1" data-bs-target="#demo" data-bs-slide-to="1" href="">The Elite</a>-->
-            <a class="text-decoration-none col text-dark mx-1" data-bs-target="#demo" data-bs-slide-to="0" href="">Parallel&nbsp;Towers</a>
-          <!-- Add your content here -->
+            <a class="text-decoration-none col text-dark mx-1 hov-img" href="">Parallel&nbsp;Towers<div class="hover-content">
+                <img src="Images/img1.jpg" alt="Image 1" class="img-fluid">
+                <p class="caption">Additional text for Link 1.</p>
+            </div>
+        </a>
+          
         </div>
-        <div class="col-2 mt-2" >
+        <div class="col-2 mt-2" style="margin-right:-2vh">
             <div><a class="text-decoration-none text-dark h6 fw-bold" href="">Institutional</a></div>
-            <a class="text-decoration-none text-dark mx-1 toggle-image" href="" data-bs-target="#demo" data-bs-slide-to="1" data-target="image-container2">The Fashion School</a>
-            <br><a class="text-decoration-none text-dark mx-1 toggle-image" data-target="image-container3" data-bs-target="#demo" data-bs-slide-to="2" href="">Pedda Badi</a>
-            <br><a class="text-decoration-none text-dark mx-1" data-bs-target="#demo" data-bs-slide-to="3" href="">Feature&nbsp;wall&nbsp;&&nbsp;stage</a>
-          <!-- Add your content here -->
+            <a class="text-decoration-none text-dark mx-1 hov-img" href="">The Fashion School<div class="hover-content">
+                <img src="Images/img2.jpg" alt="Image 2" class="img-fluid">
+                <p class="caption">Additional text for Link 2.</p>
+            </div></a>
+
+            <br><a class="text-decoration-none text-dark mx-1 hov-img" href="">Pedda Badi <div class="hover-content">
+                <img src="Images/img1.jpg" alt="Image 1" class="img-fluid">
+                <p class="caption">Additional text for Link 1.</p>
+            </div></a>
+
+            <br><a class="text-decoration-none text-dark mx-1 hov-img" href="">Feature&nbsp;wall&nbsp;&&nbsp;stage <div class="hover-content">
+                <img src="Images/img1.jpg" alt="Image 1" class="img-fluid">
+                <p class="caption">Additional text for Link 1.</p>
+            </div></a>
+         
         </div>
-        <div class="col-2">
+        <div class="col-2 mt-2" style="margin-right:-3vh">
             <div><a class="text-decoration-none text-dark h6 fw-bold" href="">Commercial</a></div>
-            <a class="text-decoration-none text-dark mx-1" data-bs-target="#demo" data-bs-slide-to="4" href="">Studio DD Office</a>
-          <!-- Add your content here -->
+            <a class="text-decoration-none text-dark mx-1 hov-img" href="">Studio DD Office <div class="hover-content">
+                <img src="Images/img1.jpg" alt="Image 1" class="img-fluid">
+                <p class="caption">Additional text for Link 1.</p>
+            </div></a>
+    
         </div>
-        <div class="col-2"style="margin-left:-40px;">
+        <div class="col-2 mt-2"style="margin-right:2vh">
           <div><a class="text-decoration-none text-dark h6 fw-bold" href="">Public Building</a></div>
-          <a class="text-decoration-none text-dark mx-1 toggle-image" data-bs-target="#demo" data-bs-slide-to="5" data-target="image-container4" href="">Elypsium&nbsp;Science&nbsp;Museum</a>
-          <br><a class="text-decoration-none text-dark mx-1 toggle-image" data-bs-target="#demo" data-bs-slide-to="6" href="#" data-target="image-container1">The Co-hub Center</a>
-        <!-- Add your content here -->
+          <a class="text-decoration-none text-dark mx-1 hov-img"  href="">Elypsium&nbsp;Science&nbsp;Museum <div class="hover-content">
+            <img src="Images/img1.jpg" alt="Image 1" class="img-fluid">
+            <p class="caption">Additional text for Link 1.</p>
+        </div></a>
+
+          <br><a class="text-decoration-none text-dark mx-1 hov-img" href="#">The Co-hub Center<div class="hover-content">
+            <img src="Images/img1.jpg" alt="Image 1" class="img-fluid">
+            <p class="caption">Additional text for Link 1.</p>
+        </div></a>
+       
       </div>
-        <div class="col-1"style="margin-left:20px; margin-right:60px;">
+
+      
+
+        <div class="col-2 mt-2">
             <div><a class="text-decoration-none text-dark h6 fw-bold" href="">&nbsp;&nbsp;&nbsp;&nbsp;Redevelopment</a></div>
-            <a class="text-decoration-none text-dark mx-1" data-bs-target="#demo" data-bs-slide-to="7" href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mehbub&nbsp;Mansion</a>
-            <br><a class="text-decoration-none text-dark mx-1" data-bs-target="#demo" data-bs-slide-to="8" href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tipu&nbsp;Khan&nbsp;Sarai</a>
-          <!-- Add your content here -->
+            <a class="text-decoration-none text-dark mx-1 hov-img" href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mehbub&nbsp;Mansion <div class="hover-content">
+                <img src="Images/img1.jpg" alt="Image 1" class="img-fluid">
+                <p class="caption">Additional text for Link 1.</p>
+            </div></a>
+
+            <br><a class="text-decoration-none text-dark mx-1 hov-img"  href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tipu&nbsp;Khan&nbsp;Sarai <div class="hover-content">
+                <img src="Images/img1.jpg" alt="Image 1" class="img-fluid">
+                <p class="caption">Additional text for Link 1.</p>
+            </div></a>
+         
         </div>
-        <div class="col-2"style="margin-left:40px;">
+        <div class="col-2 mt-2"style="margin-left:15px; margin-right:0px;">
             <div><a class="text-decoration-none text-dark h6 fw-bold" href="">Memorials</a></div>
-            <a class="text-decoration-none text-dark mx-1 toggle-image" data-bs-target="#demo" data-bs-slide-to="9" data-target="image-container5" href="">Jai Hind Memorial</a>
-          <!-- Add your content here -->
+            <a class="text-decoration-none text-dark mx-1 hov-img" href="">Jai Hind Memorial
+                <div class="hover-content">
+                    <img src="Images/img1.jpg" alt="Image 1" class="img-fluid">
+                    <p class="caption">Additional text for Link 1.</p>
+                </div>
+            </a>
+          
         </div>
       </div>
     </div>
 
     <!-- Second Main Heading using flex property -->
-    <div class="col-3 d-flex flex-column">
+    <div class="col-3 d-flex flex-column" style="margin-left:-6vh">
       <h5 class="fw-bold">Interior</h5>
       <!-- Subheadings under Second Main Heading -->
       <div class="d-flex flex-wrap">
@@ -167,166 +203,15 @@
           <br><a class="text-decoration-none text-dark mx-1" href="">Flat 02</a>
           <br><a class="text-decoration-none text-dark mx-1" href="">Flat 03</a>
         </div>
-        <div class="col-5 mx-3">
+        <div class="col-5 mx-4">
           <div><a class="text-decoration-none h6 text-dark fw-bold ha" href="">Products</a></div>
-          <a class="text-decoration-none text-dark mx-1" href="">Straight & Narrow</a>
+          <a class="text-decoration-none text-dark mx-1" href="">Straight&nbsp&&nbspNarrow</a>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Carousel -->
-<div id="demo" class="carousel slide" data-bs-ride="carousel" style="width:100%; height:40vh; margin-top:26vh;">
-
-  <!-- The slideshow/carousel -->
-  <!--Parallel Towers img-->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/parll.jpg" alt="Parallel Towers" class="d-block">
-          <div class="carousel-caption text-dark">
-            <h3>The Fashion School</h3>
-            <p class="col-4 justify-content-center">fashion institute's architecture creatively abstracts traditional patterns, simplifying them into vibrant, 
-              energy-infused designs. Simplicity in appearance belies a strategic reduction to essential elements, while 
-              vibrant colors stimulate emotions and creativity. Functionality drives every architectural decision, ensuring 
-              practical efficiency.</p>
-          </div>
-    </div>
-  <!--The Fashion School img-->
-    <div class="carousel-item">
-      <img src="images/img2.jpg" alt="The Fashion School" class="d-block">
-      <div class="carousel-caption text-dark">
-        <h3>The Fashion School</h3>
-        <p class="col-4 justify-content-center">fashion institute's architecture creatively abstracts traditional patterns, simplifying them into vibrant, 
-          energy-infused designs. Simplicity in appearance belies a strategic reduction to essential elements, while 
-          vibrant colors stimulate emotions and creativity. Functionality drives every architectural decision, ensuring 
-          practical efficiency.</p>
-      </div> 
-    </div>
-<!--Pedda Badi img-->
-    <div class="carousel-item">
-      <img src="images/img3.jpg" alt="Pedda Badi" class="d-block">
-      <div class="carousel-caption text-dark">
-        <h3>The Fashion School</h3>
-        <p class="col-4 justify-content-center">fashion institute's architecture creatively abstracts traditional patterns, simplifying them into vibrant, 
-          energy-infused designs. Simplicity in appearance belies a strategic reduction to essential elements, while 
-          vibrant colors stimulate emotions and creativity. Functionality drives every architectural decision, ensuring 
-          practical efficiency.</p>
-      </div>
-     </div>
-      <!--Feature wall & stage-->
-     <div class="carousel-item">
-        <img src="images/wall.png" alt="Feature wall & stage" class="d-block">
-        <div class="carousel-caption text-dark">
-          <h3>The Fashion School</h3>
-          <p class="col-4 justify-content-center">fashion institute's architecture creatively abstracts traditional patterns, simplifying them into vibrant, 
-            energy-infused designs. Simplicity in appearance belies a strategic reduction to essential elements, while 
-            vibrant colors stimulate emotions and creativity. Functionality drives every architectural decision, ensuring 
-            practical efficiency.</p>
-        </div>
-        </div>
-<!--Studio DD Office-->
-        <div class="carousel-item">
-          <img src="images/office.jpg" alt="Studio DD Office" class="d-block">
-          <div class="carousel-caption text-dark">
-            <h3>The Fashion School</h3>
-            <p class="col-4 justify-content-center">fashion institute's architecture creatively abstracts traditional patterns, simplifying them into vibrant, 
-              energy-infused designs. Simplicity in appearance belies a strategic reduction to essential elements, while 
-              vibrant colors stimulate emotions and creativity. Functionality drives every architectural decision, ensuring 
-              practical efficiency.</p>
-          </div>
-          </div>
-<!--Elypsium Science Museum-->
-          <div class="carousel-item">
-            <img src="images/img4.jpg" alt="Elypsium Science Museum" class="d-block">
-            <div class="carousel-caption text-dark">
-              <h3>The Fashion School</h3>
-              <p class="col-4 justify-content-center">fashion institute's architecture creatively abstracts traditional patterns, simplifying them into vibrant, 
-                energy-infused designs. Simplicity in appearance belies a strategic reduction to essential elements, while 
-                vibrant colors stimulate emotions and creativity. Functionality drives every architectural decision, ensuring 
-                practical efficiency.</p>
-            </div>
-            </div>
-<!---The Co-hub Center-->
-            <div class="carousel-item">
-              <img src="images/img1.jpg" alt="The Co-hub Center" class="d-block">
-              <div class="carousel-caption text-dark">
-                <h3>The Fashion School</h3>
-                <p class="col-4 justify-content-center">fashion institute's architecture creatively abstracts traditional patterns, simplifying them into vibrant, 
-                  energy-infused designs. Simplicity in appearance belies a strategic reduction to essential elements, while 
-                  vibrant colors stimulate emotions and creativity. Functionality drives every architectural decision, ensuring 
-                  practical efficiency.</p>
-              </div>
-            </div>
-  <!--Mehbub Mansion-->          
-            <div class="carousel-item">
-              <img src="images/mehbub.jpg" alt="Mehbub Mansion" class="d-block">
-              <div class="carousel-caption text-dark">
-                <h3>The Fashion School</h3>
-                <p class="col-4 justify-content-center">fashion institute's architecture creatively abstracts traditional patterns, simplifying them into vibrant, 
-                energy-infused designs. Simplicity in appearance belies a strategic reduction to essential elements, while                     vibrant colors stimulate emotions and creativity. Functionality drives every architectural decision, ensuring 
-                practical efficiency.</p>
-              </div>
-            </div> 
-  <!--Tipu Khan Sarai-->                  
-            <div class="carousel-item">
-              <img src="images/tipu.jpg" alt="Tipu Khan Sarai" class="d-block">
-              <div class="carousel-caption text-dark">
-                <h3>The Fashion School</h3>
-                <p class="col-4 justify-content-center">fashion institute's architecture creatively abstracts traditional patterns, simplifying them into vibrant, 
-                energy-infused designs. Simplicity in appearance belies a strategic reduction to essential elements, while                     vibrant colors stimulate emotions and creativity. Functionality drives every architectural decision, ensuring 
-                practical efficiency.</p>
-              </div>
-            </div> 
-   <!--Jai Hind Memorial-->           
-            <div class="carousel-item">
-              <img src="images/img5.jpg" alt="Jai Hind Memorial" class="d-block">
-              <div class="carousel-caption text-dark">
-                <h3>The Fashion School</h3>
-                <p class="col-4 justify-content-center">fashion institute's architecture creatively abstracts traditional patterns, simplifying them into vibrant, 
-                energy-infused designs. Simplicity in appearance belies a strategic reduction to essential elements, while                     vibrant colors stimulate emotions and creativity. Functionality drives every architectural decision, ensuring 
-                practical efficiency.</p>
-              </div>
-            </div> 
-    </div>
-  </div>
-  
-  <!-- Left and right controls/icons -->
-  <button id="btn" class="carousel-control-prev carol col-2" data-bs-target="#demo" data-bs-slide="prev">
-    <span class=""><img src="images/Arros1.png" width="40" height="40" alt="btn"></span>
-  </button>
-  <button id="btn" class="carousel-control-next carol col-2" data-bs-target="#demo" data-bs-slide="next">
-    <span class=""><img src="images/Arros1.png"  width="40" height="40" alt="" style="transform: rotate(180deg);"></span>
-  </button>
-</div>
-
-
-
-<!--<div class="images row">  
-  <div class="image-container" id="image-container1">
-    <div class="description-container">
-      <p class="col-5"><strong>Co-hub</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam culpa aliquam debitis, quis deleniti nostrum officia, commodi rerum laudantium aperiam illo odio quaerat quod ad omnis praesentium exercitationem iusto consequatur?
-      </p></div>
-    <img src="images/img1.jpg" class="col-4" alt="Image">
-    
-  </div>
-
-  <div class="image-container" id="image-container2">
-    <img src="images/img2.jpg" alt="Image">
-  </div>
-
-  <div class="image-container" id="image-container3">
-    <img src="images/img3.jpg" alt="Image">
-  </div>
-
-  <div class="image-container" id="image-container4">
-    <img src="images/img4.jpg" alt="Image">
-  </div>
-
-  <div class="image-container" id="image-container5">
-    <img src="images/img5.jpg" alt="Image">
-  </div>
-</div>-->
 
   <!---JavaScript code-->
       <script>
