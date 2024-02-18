@@ -13,52 +13,81 @@
 <!--Title-->
     <title>US</title>
     <style>
-        body {
-            font-family: 'Bahnschrift', sans-serif;
-            margin: 0;
-            padding: 0;
-           overflow: hidden;
-            font-size:small;
+      body {
+        font-family: 'Bahnschrift', sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        font-size: small;
+    }
+
+    .navbar {
+        position: absolute;
+        width: 100%;
+        z-index: 1002;
+    }
+
+    .logo {
+        position: absolute;
+        z-index: 1001;
+        cursor: pointer;
+        top: 10px;
+    }
+
+    .left-item img {
+        object-fit: contain;
+        width: 40vh;
+        height: 40vh;
+        margin-left: 15%;
+    }
+
+    .right-item img {
+        object-fit: fill;
+        width: 50vh;
+        height: 60vh;
+    }
+
+    .navbar-custom .navbar-nav .nav-link {
+        color: black;
+    }
+
+    .navbar-custom .navbar-nav .nav-link.active,
+    .navbar-custom .navbar-nav .nav-link:focus {
+        color: black;
+        font-weight: bold;
+    }
+
+    .carol {
+        top: 42vh;
+        margin-left: 10%;
+    }
+
+    .right-bt {
+        top: 62vh;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        .left-item img {
+            width: 100%;
+            height: auto;
+            margin-left: 0;
         }
-          .navbar{
-            position: absolute;
-            width: 100%; 
-            z-index: 1002; 
+
+        .right-item img {
+            width: 100%;
+            height: auto;
         }
-          .logo{
-            position: absolute;
-            z-index: 1001; 
-            cursor: pointer;
-            top:10px;
-          }
-          
-          .left-item img {
-            object-fit: contain;
-            width: 40vh;
-            height: 40vh;
-            margin-left:15%;
-          }
-          .right-item img {
-            object-fit: fill;
-            width: 50vh;
-            height: 60vh; 
-          }
-          
-          .navbar-custom .navbar-nav .nav-link{
-            color:black; /* Black text */
-          }
-          .navbar-custom .navbar-nav .nav-link.active,
-          .navbar-custom .navbar-nav .nav-link:focus {
-            color: black;
-            font-weight:bold;/* Slightly darker color when clicked or focused */
-          }
-          .carol{
-            top:42vh;
-            margin-left:10%;
-          }
-          .right-bt{
-            top:62vh;
-          }
+
+        .container-fluid {
+            margin-left: 0;
+        }
+
+        .carol,
+        .right-bt {
+            display: none;
+        }
+    }
     </style>
 </head>
 <body>
